@@ -126,4 +126,46 @@ print(list1[-1::1])
 #乘方
 print(2**2)
 
-print(-ord('h'))
+#取反
+print(-0b101)
+
+#取余、整除
+print(8%3,8//3)
+
+#左移 右移
+print(8>>1,8<<1)
+print(0b100,0b1000,0b10000)
+
+#按位与
+print(5&8)
+print(0b1100&0b100)
+
+# >= <= < >
+
+# 不等于 !=
+
+# is、not is 比较内存地址
+list1 =[1,2,3,4,5]
+list2 = list1.copy()
+list4 = list1
+list3 = list1[:]
+print(bool(list1 is list2),bool(list1 is list4),bool(list1 is list3))
+# in not in 比较元素信息,不比较内存地址
+list1 = [1,2,3]
+list2 = [1,2,3,4,[1,2,3]]
+list3 = [1,2,3,list1]
+print(bool(list1 in list3),bool(list1 in list2))
+
+#not or and 逻辑运算符
+if not "b" or "a" and "b" :
+    print('ok')
+
+if "a" or "b" and not "b" :
+    print("ok")
+print('not ok')
+
+#复合运算
+number = 16
+while number > 0:
+    number>>=1
+    print(number)
