@@ -40,3 +40,8 @@ while True:
     time.sleep(1)
     clock()
     main.mainloop()
+
+# 文件处理
+# 处理模式 w 写入，原有内容清空 r 只读模式 a 追加模式
+
+# 异常处理 try...except...else...finally
